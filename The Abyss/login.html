@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+        <div class="btn">
+        <a href="index.html" class="logo">The Abyss</a>
+        <button class="btn"><a href="index.html"><img src="images/Home.png" width="25" height="25" alt="Home"></a></button>
+        <button class="btn"><a href="game_store.html"><img src="images/1st.png" width="25" height="25" alt="First Page"></a></button>
+        <button class="btn"><a href="game_store_2nd.html"><img src="images/2nd.png" width="25" height="25" alt="Second Page"></a></button>
+        <button class="btn"><a href="about_us.html"><img src="images/About Us.png" width="25" height="25" alt="About Us"></a></button>
+        </div>
+        </header>
+
+       <br>
+
+<!---Logging in sends you back to the first page of the store--->
+    <form action="game_store.html" method="get">
+
+        <h1>LOGIN PAGE</h1>
+<font size="5">
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Bobby">
+  
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Jones">
+        </div>
+
+        <br>
+
+        <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="maverick057">
+        </div>
+
+        <br>
+
+        <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="**********" maxlength="10" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="bobjones057@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+
+        <br>
+
+        <div>
+           <label for="gender">Gender:</label>
+
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="gender" value="Male">
+
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+
+            <label for="Rather Not Say">Rather not say</label>
+            <input type="radio" id="Rather Not Say" name="gender" value="Rather Not Say">
+        </div>
+
+        <br>
+
+
+        <!---Submit sends you to the first page of store--->
+        <!---Reset clears the sections--->
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+        </font>
+
+    </form>
+
+    </body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</html>

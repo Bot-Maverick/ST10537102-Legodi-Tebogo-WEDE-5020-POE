@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+     <div class="btn">
+        <a href="index.html" class="logo">The Abyss</a>
+        <button class="btn"><a href="index.html"><img src="images/Home.png" width="25" height="25" alt="Home"></a></button>
+        <button class="btn"><a href="game_store.html"><img src="images/1st.png" width="25" height="25" alt="First Page"></a></button>
+        <button class="btn"><a href="game_store_2nd.html"><img src="images/2nd.png" width="25" height="25" alt="Second Page"></a></button>
+        <button class="btn"><a href="about_us.html"><img src="images/About Us.png" width="25" height="25" alt="About Us"></a></button>
+    </div>
+
+    <font size="5">
+    <h1>Shopping Cart</h1>
+    </font>
+
+    <form action="successful_purchase.html" method="get">
+
+<div>
+    <font size="6">
+    <label for="game">Pick Game:</label>
+    <select id="game" name="game">
+        <!---PC is not included in the options because it falls under XBOX as Microsoft--->
+        <option value="option">Option</option>
+        <option value="FC27">FC 27 - R1,899.95 (PlayStaion/XBOX/Nintendo)</option>
+        <option value="GTA VI">GTA VI - R1,899.00 (PlayStation/XBOX)</option>
+        <option value="DBSZ">Dragon Ball Sparking Zero - R2,299.00 (PlayStation/XBOX/Nintendo)</option>
+        <option value="CODMF4">Call Of Duty: Modern Warfare 4 - R1,999.00 (PlayStaion/XBOX/Nintendo)</option>
+        <option value="NBA 2K27">NBA 2K27 - R2,799.00(PlayStation/XBOX/Nintendo)</option>
+        <option value="Naruto">Naruto X Boruto: Ultimate Ninja Storm Connections - R1,699.00 (PlayStation/XBOX/Nintendo)</option>
+    </select>
+    
+</div>
+
+<!---How many games the user wants to purchase, even 10 is okay for support--->
+<div>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" placeholder="0">
+</div>
+
+<!---Choose between PlayStation, XBOX and Nintendo-->
+<div>
+            <label for="PS">PlayStation</label>
+            <input type="radio" id="PS" name="platform" value="PS">
+
+            <label for="XBOX">XBOX</label>
+            <input type="radio" id="XBOX" name="platform" value="XBOX">
+
+            <label for="Nintendo">Nintendo</label>
+            <input type="radio" id="Nintendo" name="platform" value="Nintendo">
+        </div>
+
+        <!---Whichever Platform the user chooses, requires the Platform email--->
+        <div>
+            <label for="email">Platform Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+
+<br>
+
+</font>
+
+    <br>
+
+    <font size="5">
+    <h1>Top Up Centre</h1>
+    </font>
+
+    <!---Section for Mobile Games--->
+    <!---Since Mobile Games are free a Top Up Centre is also added--->
+<div>
+    <font size="6">
+    <label for="game1">COD Mobile:</label>
+    <select id="game1" name="game1">
+        <option value="option">Option</option>
+        <option value="30CP">30 CP - R8.08</option>
+        <option value="80CP">80 CP - R19.99</option>
+        <option value="420CP">420 CP - R99.99</option>
+        <option value="880CP">880 CP - R199.99</option>
+        <option value="2400CP">2400 CP - R499.99</option>
+        <option value="5000CP">5000 CP - R999.99</option>
+    </select>
+</div>
+
+    <div>
+    <font size="6">
+    <label for="game2">Free Fire:</label>
+    <select id="game2" name="game2">
+        <option value="option">Option</option>
+        <option value="100D">100 Diamonds - R17.32</option>
+        <option value="210D">210 Diamonds - R34.65</option>
+        <option value="530D">530 Diamonds - R86.62</option>
+        <option value="1080D">1080 Diamonds - R173.25</option>
+        <option value="2200D">2200 Diamonds - R346.50</option>
+    </select>
+    
+</div>
+
+<div>
+    <font size="6">
+    <label for="game3">PUBG Mobile:</label>
+    <select id="game3" name="game3">
+        <option value="option">Option</option>
+        <option value="60UC">60 UC - R16.33</option>
+        <option value="300+25UC">300 + 25 UC - R99.99</option>
+        <option value="600+60UC">600 + 60 UC - R199.99</option>
+        <option value="1500+300UC">1500 + 300 UC - R412.33</option>
+        <option value="3000+850UC">3000 + 850 UC - R999.99</option>
+        <option value="6000+2100UC">6000 + 2100 UC - R1,999.99</option>
+    </select>
+</div>
+
+<div>
+    <font size="6">
+    <label for="game4">Mobile Legends Bang Bang:</label>
+    <select id="game4" name="game4">
+        <option value="option">Option</option>
+        <option value="14D">14 Diamonds (13 + 1) - R4.78</option>
+        <option value="55D">55 Diamonds (50 + 5) - R18.64</option>
+        <option value="172D">172 Diamonds (156 + 16) - R45.70</option>
+        <option value="344D">344 Diamonds (310 + 34) - R91.41</option>
+        <option value="1084D">1084 Diamonds (940 + 144) - R355.57</option>
+        <option value="5532D">5532 Diamonds (4649 + 883) - R1,371.31</option>
+        <option value="9288D">9288 Diamonds (7740 + 1548) = R2,285.58</option>
+    </select>
+</div>
+
+<div>
+    <font size="6">
+    <label for="game5">Genshin Impact:</label>
+    <select id="game5" name="game5">
+        <option value="option">Option</option>
+        <option value="WM">Blessing of the Welkin Moon - R87.45</option>
+        <option value="60GC">60 Genesis Crystals - R17.32</option>
+        <option value="300+30GC">300 + 30 Genesis Crystals - R87.45</option>
+        <option value="980+110GC">980 + 110 Genesis Crystals - R262.35</option>
+        <option value="1980+260GC">1980 + 260 Genesis Crystals - R523.38</option>
+        <option value="3280+600GC">3280 + 600 Genesis Crystals - R871.69</option>
+        <option value="6400+1600GC">6400 + 1600 Genesis Crystals - R1,744.05</option>
+    </select>
+</div>
+
+<div>
+    <font size="6">
+    <label for="game6">Dragon Ball Legends:</label>
+    <select id="game6" name="game6">
+        <option value="option">Option</option>
+        <option value="160CC">150 + 10 Chrono Crystals - R79.99</option>
+        <option value="340CC">320 + 40 Chrono Crystals - R149.99</option>
+        <option value="1150CC">1100 + 50 Chrono Crystals - R499.99</option>
+        <option value="2080CC">2000 + 80 Chrono Crystals - R799.99</option>
+    </select>
+</div>
+
+<br>
+
+<font size="5">
+    <h1>Payment Section</h1>
+    </font>
+
+<!---Payment Section, feel free to purchase atleast 10 for support--->
+<div>
+    <label for="payment">Payment:</label>
+    <select id="payment" name="payment">
+        <option value="option">Option</option>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="paypal">PayPal</option>
+    </select>
+</div>
+
+<div>
+    <font size="5">
+    <label for="card">Card Number:</label>
+    <input type="tel" id="card" required="16" placeholder="0000 0000 0000 0000">
+
+    <label for="date">Expiry date</label>
+    <input type="text" id="date" placeholder="MM/YY" required="5">
+
+    <label for="security">Security Code:</label>
+    <input type="password" id="security" required="3" placeholder="000">
+    </font>
+</div>
+
+<!---Redeem Code for the Low Spenders and Savers--->
+<div>
+    <label for="redeem">Redeem Code</label>
+    <input type="text" id="redeem" name="redeem" placeholder="Enter 12 digit Code">
+</div>
+
+<!---Submit takes you to the Thank You Page--->
+<div>
+<input type="submit">
+</div>
+
+     
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </body>
+
+
+</html>
